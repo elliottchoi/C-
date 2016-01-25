@@ -1,0 +1,103 @@
+//
+//  main.cpp
+//  ExtraProblems
+//
+//  Created by Elliott Choi on 2016-01-22.
+//  Copyright © 2016 Elliott Choi. All rights reserved.
+//
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    //Problem One
+    double miles;
+    cout<<"What is the speed of the car in miles per hour? :";
+    cin>>miles;
+    double kilometers=miles/0.6213712;
+    cout<<"The speed of the car in kilometers per hour is :"<<kilometers<<endl;
+    
+    //Problem Two
+    double celsius;
+    cout <<"What is the temperature in Celsius? :";
+    cin>>celsius;
+    double fahrenheit=celsius*9/5+32;
+    cout<<"The temperature in Fahrenheit is "<<fahrenheit<<endl;
+    
+    //Problem Three
+    double height, width;
+    cout <<"What is the height :";
+    cin>>height;
+    cout<<endl;
+    cout<<"What is the width? :";
+    cin>>width;
+    cout<<endl;
+    double area=height*width;
+    double perimeter= (2*(height+width));
+    cout<<"The area is "<<area<<"cm^2 and the perimeter is "<<perimeter<<"cm"<<endl;
+    
+    //Problem Four
+    int number;
+    cout<<"What is the number you want to square?";
+    cin>>number;
+    cout<<endl;
+    cout<<"The number squared is "<<number*number;
+    
+    //Problem Five
+    double weight,heightPerson;
+    cout<<"What is the weight of the person?";
+    cin>>weight;
+    cout<<endl;
+    cout<<"What is the height of the person?";
+    cin>>heightPerson;
+    cout<<endl;
+    double bodyMassIndex=(pow(weight*0.45359237 ,2.0)/pow(heightPerson*2.54 ,2.0))*703;
+    cout<<"The body mass index of the person is "<<bodyMassIndex;
+
+    //Problem Six
+    double periodOfOscillation,lengthPendulum;
+    double gravity=9.81,pi=3.1416;
+    cout<<"What is the length of the pendulum?";
+    cin>>lengthPendulum;
+    cout<<endl;
+    periodOfOscillation=(2*pi*sqrt((lengthPendulum/gravity)));
+    cout<<"The period of Oscillation is: "<<periodOfOscillation;
+    
+    //Problem Seven
+    double heightCone,radiusCone;
+    cout<<"What is the height of the cone? :";
+    cin>>heightCone;
+    cout<<endl;
+    cout<<"What is the radius of the cone? :";
+    cin>>radiusCone;
+    cout<<endl;
+    double volumeCone= (1/3)*3.14159265*pow(radiusCone,2.0)*height;
+    double surfaceAreaCone= (3.14159265*radiusCone*(radiusCone+pow((pow(radiusCone,2.0)+pow(heightCone,2.0)),0.5)));
+    cout<<"The volume of the cone is "<<volumeCone<<"cm^3 and the surface area of the cone is "<<surfaceAreaCone<<"cm^2."<<endl;
+    
+    //Problem Eight
+    double heightPyramid, widthPyramid;
+    cout<<"What is the height of the pyramid? :";
+    cin>>heightPyramid;
+    cout<<endl;
+    cout<<"What is the width of the pyramid? :";
+    cin>>widthPyramid;
+    double volumePyramid= (1/3)*pow (widthPyramid,2.0)*heightPyramid;
+    double surfaceAreaPyramid=widthPyramid*(widthPyramid+(pow((pow(widthPyramid, 2.0)+4*(pow(heightPyramid, 2.0))),0.5)));
+      cout<<"The volume of the Pyramid is "<<volumePyramid<<"cm^3 and the surface area of the cone is "<<surfaceAreaPyramid<<"cm^2.";
+    cout<<endl;
+    
+    
+    
+                                            
+    
+    
+    
+    
+                        
+    
+    
+    
+    
+    
+}
